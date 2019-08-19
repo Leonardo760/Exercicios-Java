@@ -1,0 +1,25 @@
+import java.util.Random;
+
+
+public class Main {
+    
+    public static void main (String[] args){
+        
+        int A[] = new int[100];
+        double v;
+        double num;
+        double r;
+        
+        for(int i=0; i<100; i++){
+        Random gerador = new Random(); 
+        num = gerador.nextInt((100) + 1)* -1;
+        v = gerador.nextInt((100) + 1);
+        r = num + v;
+        
+        if (r <=10 && i<100){
+           System.out.println(i+" = "+r); 
+        }
+        
+       }      
+    }        
+}
